@@ -1,0 +1,20 @@
+
+    <%# Si le message est I am going to work, le coach répondra Great!.
+    Si le message contient un point d’interrogation ? à la fin, le coach répondra Silly question, get dressed and go to work!.
+    Sinon, le coach répondra I don't care, get dressed and go to work!. %>
+<div class="mx-4 mt-3">
+<h1>Stupid coatching</h1>
+<div class="border-5 border-start mt-3 ps-3" >
+<p><%= @question %></p>
+<p> --You </p>
+</div>
+
+
+<div class="border-5 border-start mt-3 ps-3 bg-light-red">
+<p><%= @answer %></p>
+<p> --Your coach </p>
+</div>
+<%= link_to "Ask a new question", ask_path %>
+
+
+</div>
